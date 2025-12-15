@@ -1,0 +1,28 @@
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+devenv.nix
+devenv.yaml
+
+# direnv
+.direnv
+.envrc
+
+# pre-commit
+.pre-commit-config.yaml
+
+# node
+node_modules
+npm-debug.log
+dist
+
+# docker
+Dockerfile
+.env
+
+# git
+.gitattributes
+.gitignore
+.gitkeep
+.gitmodules

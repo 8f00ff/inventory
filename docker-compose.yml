@@ -1,0 +1,14 @@
+---
+services:
+  app:
+    build: .
+    container_name: inventory
+    ports:
+      - "3000:3000/tcp"
+    restart: unless-stopped
+    networks:
+      - network
+
+networks:
+  network:
+...
