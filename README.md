@@ -80,6 +80,17 @@ To start the service with Docker Compose, run:
 docker compose up -d --build
 ```
 
+## CI/CD
+
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/8f00ff/inventory/docker.yml?label=docker)](https://github.com/8f00ff/inventory/actions/workflows/docker.yml)
+
+This project uses GitHub Actions to automatically build and publish a Docker image to the GitHub Container Registry (`ghcr.io`) on every push to the `main` branch.
+
+You can run the latest image directly from the container registry:
+```sh
+docker run -p 3000:3000 ghcr.io/8f00ff/inventory:latest
+```
+
 ## Changelog
 
 [![GitHub Tag](https://img.shields.io/github/v/tag/8f00ff/inventory)](https://github.com/8f00ff/inventory/tags)
